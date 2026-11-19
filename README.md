@@ -52,6 +52,7 @@ The entire application enforces an uncompromising three-color palette across all
                                  [ Explainable Hybrid Scorer ]
 ```
 
+
 ### Explainable Composite Hybrid Formula
 $$\text{Final Score} = (S_{\text{skill}} \times 0.35) + (S_{\text{semantic}} \times 0.25) + (S_{\text{exp}} \times 0.15) + (S_{\text{edu}} \times 0.10) + (S_{\text{tech}} \times 0.10) + (S_{\text{domain}} \times 0.05)$$
 
