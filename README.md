@@ -240,5 +240,6 @@ npm run dev -- --host 127.0.0.1 --port 5173
 ```
 - Frontend Application URL: `http://127.0.0.1:5173`
 - Bulk Hiring Portal URL: `http://127.0.0.1:5173/hiring`
-#   R e s u m e - A I  
+#   R e s u m e - A I 
+ 
  
