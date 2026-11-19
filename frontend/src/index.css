@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-mocha: #6F4E37;
+    --color-mocha-950: #1c130d;
+    --color-mocha-900: #2b1e16;
+    --color-mocha-850: #38271d;
+    --color-mocha-800: #463124;
+    --color-mocha-700: #583e2d;
+    --color-silver: #E5E4E2;
+    --color-lavender: #E6E0F0;
+  }
+
+  body {
+    background-color: var(--color-mocha-950);
+    color: var(--color-silver);
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  /* Custom scrollbar matching Mocha Brown & Lavender Accent */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #2b1e16;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6F4E37;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E6E0F0;
+  }
+}
+
+@layer components {
+  /* Premium Card Component */
+  .mocha-card {
+    background-color: #2b1e16;
+    border: 1px solid rgba(229, 228, 226, 0.12);
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 30px rgba(28, 19, 13, 0.45);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .mocha-card:hover {
+    border-color: rgba(230, 224, 240, 0.28);
+  }
+
+  /* Input fields */
+  .mocha-input {
+    background-color: #38271d;
+    border: 1px solid rgba(229, 228, 226, 0.2);
+    color: #E5E4E2;
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  .mocha-input:focus {
+    border-color: #E6E0F0;
+    box-shadow: 0 0 0 2px rgba(230, 224, 240, 0.2);
+  }
+  .mocha-input::placeholder {
+    color: rgba(229, 228, 226, 0.45);
+  }
+
+  /* Primary Button: Pale Lavender bg with Mocha Brown text, hover Platinum Silver */
+  .btn-primary {
+    background-color: #E6E0F0;
+    color: #38271d;
+    font-weight: 600;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: #E5E4E2;
+    color: #2b1e16;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(230, 224, 240, 0.2);
+  }
+
+  /* Secondary Button: Mocha bg with Silver border & Lavender hover */
+  .btn-secondary {
+    background-color: #463124;
+    color: #E5E4E2;
+    border: 1px solid rgba(229, 228, 226, 0.25);
+    font-weight: 500;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .btn-secondary:hover {
+    background-color: #583e2d;
+    border-color: #E6E0F0;
+    color: #E6E0F0;
+  }
+
+  /* Active Sidebar Navigation: Pale Lavender bg with Mocha text */
+  .nav-item-active {
+    background-color: #E6E0F0 !important;
+    color: #2b1e16 !important;
+    font-weight: 600;
+  }
+  .nav-item-inactive {
+    color: #E5E4E2;
+    background-color: transparent;
+  }
+  .nav-item-inactive:hover {
+    background-color: #38271d;
+    color: #E6E0F0;
+  }
+
+  /* Badges & Pills */
+  .badge-lavender {
+    background-color: rgba(230, 224, 240, 0.14);
+    color: #E6E0F0;
+    border: 1px solid rgba(230, 224, 240, 0.25);
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .badge-silver {
+    background-color: rgba(229, 228, 226, 0.12);
+    color: #E5E4E2;
+    border: 1px solid rgba(229, 228, 226, 0.2);
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .badge-mocha {
+    background-color: #583e2d;
+    color: #E5E4E2;
+    border: 1px solid rgba(229, 228, 226, 0.15);
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+  }
+}
